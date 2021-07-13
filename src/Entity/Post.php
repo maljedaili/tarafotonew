@@ -42,6 +42,11 @@ class Post
      */
     private $price;
 
+    /**
+     * @ORM\Column(type="string", length=1000, nullable=true)
+     */
+    private $image;
+
     public function __toString()
     {
         return $this->name;
@@ -108,6 +113,18 @@ class Post
     public function setPrice(string $price): self
     {
         $this->price = $price;
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(?string $image): self
+    {
+        $this->image = $image;
 
         return $this;
     }

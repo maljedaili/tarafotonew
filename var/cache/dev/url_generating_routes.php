@@ -21,7 +21,6 @@ return [
     'update_post' => [['id'], ['_controller' => 'App\\Controller\\PostController::updatePost'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/update-post']], [], []],
     'delete' => [['id'], ['_controller' => 'App\\Controller\\PostController::deletePost'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/delete']], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], []],
-    'app_verify_email' => [[], ['_controller' => 'App\\Controller\\RegistrationController::verifyUserEmail'], [], [['text', '/verify/email']], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
     'user_index' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/user/']], [], []],
