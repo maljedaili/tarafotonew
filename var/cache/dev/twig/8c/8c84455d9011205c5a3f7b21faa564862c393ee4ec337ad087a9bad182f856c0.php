@@ -160,6 +160,6 @@ class __TwigTemplate_b11cb96e52dcc1560d4f89b9f3c4db6c85d0ded282898493f47ec52397f
 
     {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { link: profiler_url, name: 'time', status: status_color }) }}
 {% endblock %}
-", "@WebProfiler/Collector/memory.html.twig", "/Applications/Ampps/www/tarafoto/vendor/symfony/web-profiler-bundle/Resources/views/Collector/memory.html.twig");
+", "@WebProfiler/Collector/memory.html.twig", "/Users/test/Documents/project final/tarafoto-1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/memory.html.twig");
     }
 }

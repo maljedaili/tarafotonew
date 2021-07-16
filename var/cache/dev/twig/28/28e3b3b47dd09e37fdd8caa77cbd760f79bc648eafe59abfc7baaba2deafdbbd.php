@@ -227,6 +227,6 @@ class __TwigTemplate_c529695391b1e5c96412608ad8685cd078f49d1674c3358a60abd3938bc
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "/Applications/Ampps/www/tarafoto/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "/Users/test/Documents/project final/tarafoto-1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
     }
 }

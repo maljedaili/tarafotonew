@@ -52,6 +52,7 @@ final class Versions
   'doctrine/sql-formatter' => '1.1.1@56070bebac6e77230ed7d306ad13528e60732871',
   'egulias/email-validator' => '3.1.1@c81f18a3efb941d8c4d2e025f6183b5c6d697307',
   'friendsofphp/proxy-manager-lts' => 'v1.0.5@006aa5d32f887a4db4353b13b5b5095613e0611f',
+  'jms/metadata' => '2.5.0@b5c52549807b2d855b3d7e36ec164c00eb547338',
   'laminas/laminas-code' => '3.4.1@1cb8f203389ab1482bf89c0e70a04849bacd7766',
   'laminas/laminas-eventmanager' => '3.3.1@966c859b67867b179fde1eff0cd38df51472ce4a',
   'laminas/laminas-zendframework-bridge' => '1.3.0@13af2502d9bb6f7d33be2de4b51fb68c6cdb476e',
@@ -131,6 +132,7 @@ final class Versions
   'symfonycasts/verify-email-bundle' => 'v1.5.0@8c21aa9aa6b7123afed213e72485e8dad75e5dcf',
   'twig/extra-bundle' => 'v3.3.1@e12a8ee63387abb83fb7e4c897663bfb94ac22b6',
   'twig/twig' => 'v3.3.2@21578f00e83d4a82ecfa3d50752b609f13de6790',
+  'vich/uploader-bundle' => '1.18.0@c5250c8d6a072960250ce5130e68a5693b3b48dd',
   'webmozart/assert' => '1.10.0@6964c76c7804814a842473e0c8fd15bab0f18e25',
   'doctrine/data-fixtures' => '1.5.0@51d3d4880d28951fff42a635a2389f8c63baddc5',
   'doctrine/doctrine-fixtures-bundle' => '3.4.0@870189619a7770f468ffb0b80925302e065a3b34',
@@ -169,10 +171,10 @@ final class Versions
   'symfony/phpunit-bridge' => 'v5.3.3@d7d3193df3b198f287777b61ef06cd59fdb0516d',
   'symfony/web-profiler-bundle' => 'v5.3.2@8feb731cfc248cce5c0ac6eeba63ec4923c6a264',
   'theseer/tokenizer' => '1.2.0@75a63c33a8577608444246075ea0af0d052e452a',
-  'symfony/polyfill-ctype' => '*@8cc99ea56ad07f9654f1d830922d0520387f3bb2',
-  'symfony/polyfill-iconv' => '*@8cc99ea56ad07f9654f1d830922d0520387f3bb2',
-  'symfony/polyfill-php72' => '*@8cc99ea56ad07f9654f1d830922d0520387f3bb2',
-  '__root__' => 'dev-master@8cc99ea56ad07f9654f1d830922d0520387f3bb2',
+  'symfony/polyfill-ctype' => '*@7e375fe9613ab2735924d49806cb2b932dfb2ffc',
+  'symfony/polyfill-iconv' => '*@7e375fe9613ab2735924d49806cb2b932dfb2ffc',
+  'symfony/polyfill-php72' => '*@7e375fe9613ab2735924d49806cb2b932dfb2ffc',
+  '__root__' => 'dev-master@7e375fe9613ab2735924d49806cb2b932dfb2ffc',
 );
 
     private function __construct()

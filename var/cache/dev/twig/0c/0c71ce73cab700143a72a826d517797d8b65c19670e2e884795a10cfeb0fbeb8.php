@@ -413,6 +413,6 @@ class __TwigTemplate_9bac472c2e1cd301b98505e20233555bbb9f9600484dd3da5bafb5066ef
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/Applications/Ampps/www/tarafoto/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/Users/test/Documents/project final/tarafoto-1/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
     }
 }

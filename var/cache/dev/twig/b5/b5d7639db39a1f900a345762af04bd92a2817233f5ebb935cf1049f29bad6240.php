@@ -155,6 +155,6 @@ class __TwigTemplate_056a03829351aff04907f020ebd510c55c93e4fc7e9638ddb649c53ebcc
 {% block panel %}
     {{ render(controller('web_profiler.controller.router::panelAction', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "/Applications/Ampps/www/tarafoto/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "/Users/test/Documents/project final/tarafoto-1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
     }
 }

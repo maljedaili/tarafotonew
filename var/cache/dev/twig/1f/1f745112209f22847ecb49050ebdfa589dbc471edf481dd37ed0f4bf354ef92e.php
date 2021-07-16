@@ -644,6 +644,6 @@ class __TwigTemplate_63dd0a62c8b589c680464de611299d85140c5a4ebbdb69400c775482f46
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/notifier.html.twig", "/Applications/Ampps/www/tarafoto/vendor/symfony/web-profiler-bundle/Resources/views/Collector/notifier.html.twig");
+", "@WebProfiler/Collector/notifier.html.twig", "/Users/test/Documents/project final/tarafoto-1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/notifier.html.twig");
     }
 }

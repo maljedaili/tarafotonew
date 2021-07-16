@@ -4,9 +4,11 @@ namespace App\Entity;
 
 use App\Repository\PostRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
 
 /**
  * @ORM\Entity(repositoryClass=PostRepository::class)
+ * @Vich\Uploadable
  */
 class Post
 {
@@ -45,7 +47,19 @@ class Post
     /**
      * @ORM\Column(type="string", length=1000, nullable=true)
      */
-    private $image;
+    private $images;
+
+    /**
+     * @Vich\UploadableField(mapping="image", fileNameProperty="images")
+     *
+     * @var null|File
+     */
+    private $imageFile;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $author;
 
     public function __toString()
     {
@@ -117,15 +131,51 @@ class Post
         return $this;
     }
 
-    public function getImage(): ?string
+    public function getImages(): ?string
     {
-        return $this->image;
+        return $this->images;
     }
 
-    public function setImage(?string $image): self
+    public function setImages(?string $images): self
     {
-        $this->image = $image;
+        $this->images = $images;
 
         return $this;
+    }
+
+    public function getAuthor(): ?int
+    {
+        return $this->author;
+    }
+
+    public function setAuthor(int $author): self
+    {
+        $this->author = $author;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of mediaFile.
+     *
+     * @return null|File
+     */
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
+
+    /**
+     * @param null|File|\Symfony\Component\HttpFoundation\File\UploadedFile $imageFile
+     */
+    public function setImageFile(?File $imageFile = null): void
+    {
+        $this->imageFile = $imageFile;
+
+        if (null !== $imageFile) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updated_at = new \DateTimeImmutable();
+        }
     }
 }

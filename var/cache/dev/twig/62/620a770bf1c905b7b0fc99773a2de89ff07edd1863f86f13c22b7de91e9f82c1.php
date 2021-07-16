@@ -479,6 +479,6 @@ class __TwigTemplate_c66b592f4351aeda30f5f1edc7c3362586b805765400381ea8af2248a69
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/validator.html.twig", "/Applications/Ampps/www/tarafoto/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
+", "@WebProfiler/Collector/validator.html.twig", "/Users/test/Documents/project final/tarafoto-1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
     }
 }

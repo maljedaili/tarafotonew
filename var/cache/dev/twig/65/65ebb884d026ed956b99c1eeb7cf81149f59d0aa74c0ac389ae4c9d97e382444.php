@@ -898,6 +898,6 @@ class __TwigTemplate_b7c37f97fe8f9ef630c338912ad722188540504079420176c6c06dd7ebb
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "/Applications/Ampps/www/tarafoto/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "/Users/test/Documents/project final/tarafoto-1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
     }
 }

@@ -41,66 +41,57 @@ class __TwigTemplate_1677a0d115ab346194fa0509dd907acf05adee770a4ba4fbdcd8cca10b7
 
         // line 1
         echo "
+<header>
+\t<nav class=\"navbar navbar-expand-lg bg-secondary text-uppercase fixed-top\" id=\"mainNav\">
+\t\t<div class=\"container\">
+\t\t\t<a class=\"navbar-brand\" href=\"/\">tarafoto</a>
+\t\t\t<button class=\"navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+\t\t\t\tMenu
+\t\t\t\t<i class=\"fas fa-bars\"></i>
+\t\t\t</button>
+\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">
+\t\t\t\t<ul class=\"navbar-nav ms-auto\">
+\t\t\t\t\t<li class=\"nav-item mx-0 mx-lg-1\">
+\t\t\t\t\t\t<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"";
+        // line 13
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+        echo "\">Signin</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mx-0 mx-lg-1\">
+\t\t\t\t\t\t<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"#about\">About</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mx-0 mx-lg-1\">
+\t\t\t\t\t\t<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"";
+        // line 19
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show");
+        echo "\">Gallery</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mx-0 mx-lg-1\">
+\t\t\t\t\t\t<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"#contact\">Contact</a>
+\t\t\t\t\t</li>
 
-<head>
-        <meta charset=\"utf-8\" />
-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />
-        <meta name=\"description\" content=\"\" />
-        <meta name=\"author\" content=\"\" />
-        <title>TaraFoto</title>
-        <!-- Favicon-->
-        <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/favicon.ico\" />
-        <!-- Font Awesome icons (free version)-->
-        <script src=\"https://use.fontawesome.com/releases/v5.15.3/js/all.js\" crossorigin=\"anonymous\"></script>
-        <!-- Google fonts-->
-        <link href=\"https://fonts.googleapis.com/css?family=Montserrat:400,700\" rel=\"stylesheet\" type=\"text/css\" />
-        <link href=\"https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic\" rel=\"stylesheet\" type=\"text/css\" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href=\"styles/app.css\" rel=\"stylesheet\" />
-       
-
-        
-    </head>
-
-    <nav id=\"nav\">
-        
-         <ul>
-\t\t\t<li class=\"current\"><a href=\"";
-        // line 26
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("main");
-        echo "\">Home</a></li>
-\t\t\t<li><a href=\"products.php\">Gallery</a></li>
-                        ";
-        // line 28
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 28, $this->source); })()), "user", [], "any", false, false, false, 28)) {
-            // line 29
-            echo "                         <a class=\"nav-link\" href=\"";
+\t\t\t\t\t";
+        // line 25
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 25, $this->source); })()), "user", [], "any", false, false, false, 25)) {
+            // line 26
+            echo "\t\t\t\t\t<li class=\"nav-item mx-0 mx-lg-1\">
+\t\t\t\t\t\t<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"";
+            // line 27
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "\">Sign Out</a>
-                        
-                        ";
-        } else {
-            // line 32
-            echo "                        <a class=\"nav-link\" href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-            echo "\">Sign in</a>
-                         ";
+            echo "\">logout</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t";
         }
-        // line 34
-        echo "
-                        <a class=\"nav-link\" href=\"";
-        // line 35
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
-        echo "\">SignUp</a>
-                        
-                   
-            
-\t\t</ul>
-        </nav>
-       
-        
+        // line 30
+        echo "\t\t\t\t\t
+\t\t\t\t</ul>
+\t\t\t</div>
+\t\t</div>
+\t</nav>
 
-\t</div>
+
+
+
 
    
   
@@ -126,59 +117,53 @@ class __TwigTemplate_1677a0d115ab346194fa0509dd907acf05adee770a4ba4fbdcd8cca10b7
 
     public function getDebugInfo()
     {
-        return array (  93 => 35,  90 => 34,  84 => 32,  77 => 29,  75 => 28,  70 => 26,  43 => 1,);
+        return array (  86 => 30,  80 => 27,  77 => 26,  75 => 25,  66 => 19,  57 => 13,  43 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("
+<header>
+\t<nav class=\"navbar navbar-expand-lg bg-secondary text-uppercase fixed-top\" id=\"mainNav\">
+\t\t<div class=\"container\">
+\t\t\t<a class=\"navbar-brand\" href=\"/\">tarafoto</a>
+\t\t\t<button class=\"navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+\t\t\t\tMenu
+\t\t\t\t<i class=\"fas fa-bars\"></i>
+\t\t\t</button>
+\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">
+\t\t\t\t<ul class=\"navbar-nav ms-auto\">
+\t\t\t\t\t<li class=\"nav-item mx-0 mx-lg-1\">
+\t\t\t\t\t\t<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"{{ path('app_login') }}\">Signin</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mx-0 mx-lg-1\">
+\t\t\t\t\t\t<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"#about\">About</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mx-0 mx-lg-1\">
+\t\t\t\t\t\t<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"{{ path('show') }}\">Gallery</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mx-0 mx-lg-1\">
+\t\t\t\t\t\t<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"#contact\">Contact</a>
+\t\t\t\t\t</li>
 
-<head>
-        <meta charset=\"utf-8\" />
-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />
-        <meta name=\"description\" content=\"\" />
-        <meta name=\"author\" content=\"\" />
-        <title>TaraFoto</title>
-        <!-- Favicon-->
-        <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/favicon.ico\" />
-        <!-- Font Awesome icons (free version)-->
-        <script src=\"https://use.fontawesome.com/releases/v5.15.3/js/all.js\" crossorigin=\"anonymous\"></script>
-        <!-- Google fonts-->
-        <link href=\"https://fonts.googleapis.com/css?family=Montserrat:400,700\" rel=\"stylesheet\" type=\"text/css\" />
-        <link href=\"https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic\" rel=\"stylesheet\" type=\"text/css\" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href=\"styles/app.css\" rel=\"stylesheet\" />
-       
+\t\t\t\t\t{% if app.user %}
+\t\t\t\t\t<li class=\"nav-item mx-0 mx-lg-1\">
+\t\t\t\t\t\t<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"{{ path('app_logout') }}\">logout</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t{% endif %}
+\t\t\t\t\t
+\t\t\t\t</ul>
+\t\t\t</div>
+\t\t</div>
+\t</nav>
 
-        
-    </head>
 
-    <nav id=\"nav\">
-        
-         <ul>
-\t\t\t<li class=\"current\"><a href=\"{{ path(\"main\")}}\">Home</a></li>
-\t\t\t<li><a href=\"products.php\">Gallery</a></li>
-                        {% if app.user %}
-                         <a class=\"nav-link\" href=\"{{ path(\"app_logout\")}}\">Sign Out</a>
-                        
-                        {% else %}
-                        <a class=\"nav-link\" href=\"{{ path(\"app_login\")}}\">Sign in</a>
-                         {% endif %}
 
-                        <a class=\"nav-link\" href=\"{{ path(\"app_register\")}}\">SignUp</a>
-                        
-                   
-            
-\t\t</ul>
-        </nav>
-       
-        
 
-\t</div>
 
    
   
 \t
-", "common/_navbar.html.twig", "/Applications/Ampps/www/tarafoto/templates/common/_navbar.html.twig");
+", "common/_navbar.html.twig", "/Users/test/Documents/project final/tarafoto-1/templates/common/_navbar.html.twig");
     }
 }

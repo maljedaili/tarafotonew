@@ -3,10 +3,26 @@
 {% block title %}Hello Moin{% endblock %}
 
 {% block header %}
+<header>
+
+{{include('common/_navbar.html.twig')}}
+{{include('common/_header.html.twig')}}
+
+</header>
+    
+    
+
   
 {% endblock %}
 
 {% block body %}
-{{include('common/_header.html.twig')}}
+
+
+{{include('common/_body.html.twig')}}
+
+
+
+
 
 {% endblock %}
+

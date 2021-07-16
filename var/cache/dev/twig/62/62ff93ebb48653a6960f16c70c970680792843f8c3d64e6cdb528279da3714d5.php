@@ -65,13 +65,15 @@ class __TwigTemplate_c4001b01aaf667ba6c9c879d0408a742bff155a6390b32a2d10941a3a08
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "<h2>";
-        echo twig_escape_filter($this->env, (isset($context["form_title"]) || array_key_exists("form_title", $context) ? $context["form_title"] : (function () { throw new RuntimeError('Variable "form_title" does not exist.', 4, $this->source); })()), "html", null, true);
-        echo "</h2>
+        echo "<div class=\"contanier\">
+
 ";
-        // line 5
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form_descripstion"]) || array_key_exists("form_descripstion", $context) ? $context["form_descripstion"] : (function () { throw new RuntimeError('Variable "form_descripstion" does not exist.', 5, $this->source); })()), 'form');
+        // line 6
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form_descripstion"]) || array_key_exists("form_descripstion", $context) ? $context["form_descripstion"] : (function () { throw new RuntimeError('Variable "form_descripstion" does not exist.', 6, $this->source); })()), 'form');
         echo "
+</div>
+
+
 
 
 ";
@@ -95,7 +97,7 @@ class __TwigTemplate_c4001b01aaf667ba6c9c879d0408a742bff155a6390b32a2d10941a3a08
 
     public function getDebugInfo()
     {
-        return array (  73 => 5,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  72 => 6,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -103,11 +105,15 @@ class __TwigTemplate_c4001b01aaf667ba6c9c879d0408a742bff155a6390b32a2d10941a3a08
         return new Source("{% extends 'base.html.twig' %}
 
 {% block body %}
-<h2>{{form_title}}</h2>
+<div class=\"contanier\">
+
 {{ form(form_descripstion)}}
+</div>
+
+
 
 
 {% endblock %}
-", "post/create.html.twig", "/Applications/Ampps/www/tarafoto/templates/post/create.html.twig");
+", "post/create.html.twig", "/Users/test/Documents/project final/tarafoto-1/templates/post/create.html.twig");
     }
 }

@@ -900,6 +900,6 @@ class __TwigTemplate_ccc00e0b57b3dd233c55875ca68632550beb6a342c5bb63b512f5b474ba
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "/Applications/Ampps/www/tarafoto/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "/Users/test/Documents/project final/tarafoto-1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
     }
 }

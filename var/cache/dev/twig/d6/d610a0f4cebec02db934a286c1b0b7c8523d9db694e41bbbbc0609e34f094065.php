@@ -482,6 +482,6 @@ class __TwigTemplate_4ef41dd2f995d661da04176807d80d6a6297b52cfcab28325af029fa0fa
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "/Applications/Ampps/www/tarafoto/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "/Users/test/Documents/project final/tarafoto-1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
     }
 }

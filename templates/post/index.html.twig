@@ -4,24 +4,38 @@
 
 {% block body %}
 
+<div class=" hero ">
+		<table>
+			<thead>
+				<th>ID</th>
+				<th>Title</th>
+				<th>Description</th>
+				<th>Price</th>
+				<th>photo</th>
+			</thead>
+			<tbody>
+					<td>{{ post.id }}</td>
+					<td>{{ post.title }}</td>
+					<td>{{ post.descripstion }}</td>
+					<td>{{ post.price }}</td>
+					<td>{{ post.images }}</td>
+                    <td>
+					    <a class="btn-primary" href="{{ path('delete', {'id': post.id}) }}">delete</a>
+                        					    <a class="btn-primary" href="{{ path('delete', {'id': post.id}) }}">update</a>
 
-    <h1>List of all the post</h1>
-        <table class="tabme table-post">
-            <thead>
-                <tr>
-                    <td>ID</td>
-                    <td>Titlr</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                
-              
-            </tbody>
-    
-    </table>
+				    </td>
+                    
+
+				</tbody>
+				
+			</tbody>
+		</div>
+
+	</table>
+</div>
+
     
     
- 
+
             
 {% endblock %}

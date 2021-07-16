@@ -1671,6 +1671,6 @@ class __TwigTemplate_dca46e2d9cdfe98c49e4965b7a8fd8bb8771facb99bdc757839e998be03
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/Applications/Ampps/www/tarafoto/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/Users/test/Documents/project final/tarafoto-1/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }
