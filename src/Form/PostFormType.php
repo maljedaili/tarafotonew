@@ -19,7 +19,6 @@ class PostFormType extends AbstractType
             ->add('descripstion')
             ->add('price')
             ->add('categories_id')
-            ->add('author')
             ->add('imageFile', VichFileType::class, [
                 'required' => false,
                 'allow_delete' => true,

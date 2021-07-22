@@ -60,6 +60,11 @@ class Post
      */
     private $author;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Categories::class, inversedBy="posts")
+     */
+    private $category;
+
     public function __toString()
     {
         return $this->name;
@@ -176,5 +181,17 @@ class Post
             // otherwise the event listeners won't be called and the file is lost
             $this->created_at = new \DateTimeImmutable();
         }
+    }
+
+    public function getCategory(): ?Categories
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Categories $category): self
+    {
+        $this->category = $category;
+
+        return $this;
     }
 }
