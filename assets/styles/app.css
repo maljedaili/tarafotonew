@@ -10967,10 +10967,10 @@ color: #2c3e50;
 font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-background-color: #fff;
+background-color: #88002D;
 }
 .divider-custom.divider-light .divider-custom-icon {
-color: #fff;
+color: #88002D;
 }
 
 .btn-xl {
@@ -11664,3 +11664,64 @@ background-color: #ddd;
 background-color: #666;
 color: white;
 }
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #6D071A,;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+ 
+
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cardimg{
+  width: 100%;
+    height: 30vh;
+    padding: 8px;
+    border: 2px solid #eee;
+}
+
+
+

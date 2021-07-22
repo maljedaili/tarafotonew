@@ -86,18 +86,60 @@ class __TwigTemplate_72a86351ab4b19de7af05e0f21bad295392cb761f94959e530252bbaa3d
 
         // line 6
         echo "
+<div class=\" hero \">
+\t\t<table>
+\t\t\t<thead>
+\t\t\t\t<th>ID</th>
+\t\t\t\t<th>Title</th>
+\t\t\t\t<th>Description</th>
+\t\t\t\t<th>Price</th>
+\t\t\t\t<th>photo</th>
+\t\t\t</thead>
+\t\t\t<tbody>
+\t\t\t\t\t<td>";
+        // line 17
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 17, $this->source); })()), "id", [], "any", false, false, false, 17), "html", null, true);
+        echo "</td>
+\t\t\t\t\t<td>";
+        // line 18
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 18, $this->source); })()), "title", [], "any", false, false, false, 18), "html", null, true);
+        echo "</td>
+\t\t\t\t\t<td>";
+        // line 19
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 19, $this->source); })()), "descripstion", [], "any", false, false, false, 19), "html", null, true);
+        echo "</td>
+\t\t\t\t\t<td>";
+        // line 20
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 20, $this->source); })()), "price", [], "any", false, false, false, 20), "html", null, true);
+        echo "</td>
+\t\t\t\t\t<td>";
+        // line 21
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 21, $this->source); })()), "images", [], "any", false, false, false, 21), "html", null, true);
+        echo "</td>
+                    <td>
+\t\t\t\t\t    <a class=\"btn-primary\" href=\"";
+        // line 23
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("delete", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 23, $this->source); })()), "id", [], "any", false, false, false, 23)]), "html", null, true);
+        echo "\">delete</a>
+                        \t\t\t\t\t    <a class=\"btn-primary\" href=\"";
+        // line 24
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("delete", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 24, $this->source); })()), "id", [], "any", false, false, false, 24)]), "html", null, true);
+        echo "\">update</a>
 
-    <h1>Page Posts</h1>
+\t\t\t\t    </td>
+                    
+
+\t\t\t\t</tbody>
+\t\t\t\t
+\t\t\t</tbody>
+\t\t</div>
+
+\t</table>
+</div>
+
     
-    <p>Description : ";
-        // line 10
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 10, $this->source); })()), "descripstion", [], "any", false, false, false, 10), "html", null, true);
-        echo "</>
-    <p>Price : ";
-        // line 11
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 11, $this->source); })()), "price", [], "any", false, false, false, 11), "html", null, true);
-        echo "</p>
- 
+    
+
             
 ";
         
@@ -120,7 +162,7 @@ class __TwigTemplate_72a86351ab4b19de7af05e0f21bad295392cb761f94959e530252bbaa3d
 
     public function getDebugInfo()
     {
-        return array (  98 => 11,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  126 => 24,  122 => 23,  117 => 21,  113 => 20,  109 => 19,  105 => 18,  101 => 17,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -131,13 +173,40 @@ class __TwigTemplate_72a86351ab4b19de7af05e0f21bad295392cb761f94959e530252bbaa3d
 
 {% block body %}
 
+<div class=\" hero \">
+\t\t<table>
+\t\t\t<thead>
+\t\t\t\t<th>ID</th>
+\t\t\t\t<th>Title</th>
+\t\t\t\t<th>Description</th>
+\t\t\t\t<th>Price</th>
+\t\t\t\t<th>photo</th>
+\t\t\t</thead>
+\t\t\t<tbody>
+\t\t\t\t\t<td>{{ post.id }}</td>
+\t\t\t\t\t<td>{{ post.title }}</td>
+\t\t\t\t\t<td>{{ post.descripstion }}</td>
+\t\t\t\t\t<td>{{ post.price }}</td>
+\t\t\t\t\t<td>{{ post.images }}</td>
+                    <td>
+\t\t\t\t\t    <a class=\"btn-primary\" href=\"{{ path('delete', {'id': post.id}) }}\">delete</a>
+                        \t\t\t\t\t    <a class=\"btn-primary\" href=\"{{ path('delete', {'id': post.id}) }}\">update</a>
 
-    <h1>Page Posts</h1>
+\t\t\t\t    </td>
+                    
+
+\t\t\t\t</tbody>
+\t\t\t\t
+\t\t\t</tbody>
+\t\t</div>
+
+\t</table>
+</div>
+
     
-    <p>Description : {{ post.descripstion  }}</>
-    <p>Price : {{ post.price}}</p>
- 
+    
+
             
-{% endblock %}", "post/index.html.twig", "/Applications/Ampps/www/tarafoto/templates/post/index.html.twig");
+{% endblock %}", "post/index.html.twig", "/Users/test/Documents/project final/tarafoto-1/templates/post/index.html.twig");
     }
 }

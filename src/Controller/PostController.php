@@ -11,16 +11,17 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PostController extends AbstractController
 {
-    // /**
+    //    /**
     //  * @Route("/post", name="post")
     //  */
-    // public function createPost(): Response
+    // public function index()
     // {
+    //     $posts = $this->getDoctrine()->getRepository(Post::class)->findAll();
+
     //     return $this->render('post/index.html.twig', [
-    //         'controller_name' => 'PostController',
+    //         'posts' => $posts,
     //     ]);
     // }
-
     //Create Post
 
     /**
@@ -36,31 +37,17 @@ class PostController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             //entity manager
             $entityManger = $this->getDoctrine()->getManager();
-
-            /**
-             * @var UploadeFile $file */
-            $file = $request->files->get('post')['attachment'];
-            if ($file) {
-                $filename = md5(uniqid()).''.$file->quessClientExtension();
-
-                $file->move(
-                    // TODO: get target directory.
-
-                    $this->getParameter('uploads_dir'),
-                    $filename
-                );
-                $post->setImages($filename);
-                $entityManger->persist($post);
-                $entityManger->flush();
-            }
+            $entityManger->persist($post);
+            $entityManger->flush();
         }
 
-        //return a response
+        
 
         return $this->render('post/create.html.twig', [
             'form_title' => 'add title',
             'form_descripstion' => $form->createView(),
         ]);
+        
     }
 
     //READ

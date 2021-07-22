@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit855cc47470747fa620fddda208cf73d8
+class ComposerStaticInit658ebe19de2b4f69b48695ea877cf6a3
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -792,6 +792,7 @@ class ComposerStaticInit855cc47470747fa620fddda208cf73d8
         'Doctrine\\Common\\Cache\\Psr6\\CacheItem' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/Psr6/CacheItem.php',
         'Doctrine\\Common\\Cache\\Psr6\\DoctrineProvider' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/Psr6/DoctrineProvider.php',
         'Doctrine\\Common\\Cache\\Psr6\\InvalidArgument' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/Psr6/InvalidArgument.php',
+        'Doctrine\\Common\\Cache\\Psr6\\TypedCacheItem' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/Psr6/TypedCacheItem.php',
         'Doctrine\\Common\\ClassLoader' => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common/ClassLoader.php',
         'Doctrine\\Common\\Collections\\AbstractLazyCollection' => __DIR__ . '/..' . '/doctrine/collections/lib/Doctrine/Common/Collections/AbstractLazyCollection.php',
         'Doctrine\\Common\\Collections\\ArrayCollection' => __DIR__ . '/..' . '/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php',
@@ -6021,6 +6022,7 @@ class ComposerStaticInit855cc47470747fa620fddda208cf73d8
         'Symfony\\Contracts\\Translation\\TranslatableInterface' => __DIR__ . '/..' . '/symfony/translation-contracts/TranslatableInterface.php',
         'Symfony\\Contracts\\Translation\\TranslatorInterface' => __DIR__ . '/..' . '/symfony/translation-contracts/TranslatorInterface.php',
         'Symfony\\Contracts\\Translation\\TranslatorTrait' => __DIR__ . '/..' . '/symfony/translation-contracts/TranslatorTrait.php',
+        'Symfony\\Flex\\Cache' => __DIR__ . '/..' . '/symfony/flex/src/Cache.php',
         'Symfony\\Flex\\Command\\DumpEnvCommand' => __DIR__ . '/..' . '/symfony/flex/src/Command/DumpEnvCommand.php',
         'Symfony\\Flex\\Command\\GenerateIdCommand' => __DIR__ . '/..' . '/symfony/flex/src/Command/GenerateIdCommand.php',
         'Symfony\\Flex\\Command\\InstallRecipesCommand' => __DIR__ . '/..' . '/symfony/flex/src/Command/InstallRecipesCommand.php',
@@ -6029,6 +6031,8 @@ class ComposerStaticInit855cc47470747fa620fddda208cf73d8
         'Symfony\\Flex\\Command\\RequireCommand' => __DIR__ . '/..' . '/symfony/flex/src/Command/RequireCommand.php',
         'Symfony\\Flex\\Command\\UnpackCommand' => __DIR__ . '/..' . '/symfony/flex/src/Command/UnpackCommand.php',
         'Symfony\\Flex\\Command\\UpdateCommand' => __DIR__ . '/..' . '/symfony/flex/src/Command/UpdateCommand.php',
+        'Symfony\\Flex\\ComposerRepository' => __DIR__ . '/..' . '/symfony/flex/src/ComposerRepository.php',
+        'Symfony\\Flex\\Configurator' => __DIR__ . '/..' . '/symfony/flex/src/Configurator.php',
         'Symfony\\Flex\\Configurator\\AbstractConfigurator' => __DIR__ . '/..' . '/symfony/flex/src/Configurator/AbstractConfigurator.php',
         'Symfony\\Flex\\Configurator\\BundlesConfigurator' => __DIR__ . '/..' . '/symfony/flex/src/Configurator/BundlesConfigurator.php',
         'Symfony\\Flex\\Configurator\\ComposerScriptsConfigurator' => __DIR__ . '/..' . '/symfony/flex/src/Configurator/ComposerScriptsConfigurator.php',
@@ -6040,9 +6044,26 @@ class ComposerStaticInit855cc47470747fa620fddda208cf73d8
         'Symfony\\Flex\\Configurator\\EnvConfigurator' => __DIR__ . '/..' . '/symfony/flex/src/Configurator/EnvConfigurator.php',
         'Symfony\\Flex\\Configurator\\GitignoreConfigurator' => __DIR__ . '/..' . '/symfony/flex/src/Configurator/GitignoreConfigurator.php',
         'Symfony\\Flex\\Configurator\\MakefileConfigurator' => __DIR__ . '/..' . '/symfony/flex/src/Configurator/MakefileConfigurator.php',
+        'Symfony\\Flex\\CurlDownloader' => __DIR__ . '/..' . '/symfony/flex/src/CurlDownloader.php',
+        'Symfony\\Flex\\Downloader' => __DIR__ . '/..' . '/symfony/flex/src/Downloader.php',
         'Symfony\\Flex\\Event\\UpdateEvent' => __DIR__ . '/..' . '/symfony/flex/src/Event/UpdateEvent.php',
+        'Symfony\\Flex\\Flex' => __DIR__ . '/..' . '/symfony/flex/src/Flex.php',
+        'Symfony\\Flex\\InformationOperation' => __DIR__ . '/..' . '/symfony/flex/src/InformationOperation.php',
+        'Symfony\\Flex\\Lock' => __DIR__ . '/..' . '/symfony/flex/src/Lock.php',
+        'Symfony\\Flex\\Options' => __DIR__ . '/..' . '/symfony/flex/src/Options.php',
+        'Symfony\\Flex\\PackageFilter' => __DIR__ . '/..' . '/symfony/flex/src/PackageFilter.php',
+        'Symfony\\Flex\\PackageJsonSynchronizer' => __DIR__ . '/..' . '/symfony/flex/src/PackageJsonSynchronizer.php',
+        'Symfony\\Flex\\PackageResolver' => __DIR__ . '/..' . '/symfony/flex/src/PackageResolver.php',
+        'Symfony\\Flex\\ParallelDownloader' => __DIR__ . '/..' . '/symfony/flex/src/ParallelDownloader.php',
+        'Symfony\\Flex\\Path' => __DIR__ . '/..' . '/symfony/flex/src/Path.php',
+        'Symfony\\Flex\\Recipe' => __DIR__ . '/..' . '/symfony/flex/src/Recipe.php',
+        'Symfony\\Flex\\Response' => __DIR__ . '/..' . '/symfony/flex/src/Response.php',
+        'Symfony\\Flex\\ScriptExecutor' => __DIR__ . '/..' . '/symfony/flex/src/ScriptExecutor.php',
+        'Symfony\\Flex\\SymfonyBundle' => __DIR__ . '/..' . '/symfony/flex/src/SymfonyBundle.php',
+        'Symfony\\Flex\\TruncatedComposerRepository' => __DIR__ . '/..' . '/symfony/flex/src/TruncatedComposerRepository.php',
         'Symfony\\Flex\\Unpack\\Operation' => __DIR__ . '/..' . '/symfony/flex/src/Unpack/Operation.php',
         'Symfony\\Flex\\Unpack\\Result' => __DIR__ . '/..' . '/symfony/flex/src/Unpack/Result.php',
+        'Symfony\\Flex\\Unpacker' => __DIR__ . '/..' . '/symfony/flex/src/Unpacker.php',
         'Symfony\\Polyfill\\Intl\\Grapheme\\Grapheme' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/Grapheme.php',
         'Symfony\\Polyfill\\Intl\\Icu\\Collator' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/Collator.php',
         'Symfony\\Polyfill\\Intl\\Icu\\Currencies' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/Currencies.php',
@@ -6458,9 +6479,9 @@ class ComposerStaticInit855cc47470747fa620fddda208cf73d8
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit855cc47470747fa620fddda208cf73d8::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit855cc47470747fa620fddda208cf73d8::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit855cc47470747fa620fddda208cf73d8::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit658ebe19de2b4f69b48695ea877cf6a3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit658ebe19de2b4f69b48695ea877cf6a3::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit658ebe19de2b4f69b48695ea877cf6a3::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,28 +1,110 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello Moin{% endblock %}
+{% block title %}Hello Moin
+{% endblock %}
 
 {% block header %}
-<header>
 
-{{include('common/_navbar.html.twig')}}
-{{include('common/_header.html.twig')}}
+	{{include('common/_navbar.html.twig')}}
 
-</header>
-    
-    
-
-  
-{% endblock %}
-
-{% block body %}
+	
+	<body>
+		<header>
 
 
-{{include('common/_body.html.twig')}}
+			<div
+				class=" hero ">
+				<!-- Masthead Avatar Image-->
+				<img class="avatar" src="../img/logo.svg" alt="..."/>
+
+				<!-- Masthead Heading-->
+
+				<!-- Icon Divider-->
+					<div class="divider-custom divider-light"> <div class="divider-custom-line"></div>
+					<div class="divider-custom-icon">
+						<i class="fas fa-star"></i>
+					</div>
+					<div class="divider-custom-line"></div>
+				</div>
+				<!-- Masthead Subheading-->
+				<p class="masthead-subheading font-weight-light mb-0">"One sees clearly only with the heart. What is essential is invisible to the eye."
+				</p>
+				<br>
+				<br>
+				<a class="btn btn-lg btn-primary" href=" {{path('app_register') }} ">Signup</a>
+			</div>
+		</header>
 
 
+	{% endblock %}
+	{% block body %}
+	</body>
+	<body>
+		{# <div class="container">
+			<h1>Gallery</h1>
+		</div>
+		{% for post in posts %}
+		
+		<div class= "contanier">
+		
+		  <div class="gallery-image">
+		    <div class="img-box">
+			 <img class="cardimg" src="{{ asset("uploads/images/" ~ post.images )}}" alt="" >
+		      <div class="transparent-box">
+		        <div class="caption">
+		          <p>{{ post.title }}</p>
+		          <p class="opacity-low">{{ post.descripstion }}</p>
+		        </div>
+		      </div> 
+		    </div>
+		</div>
+		{% endfor %}
+		</body> #}
 
 
+		<section class="page-section" id="contact">
+			<div
+				class="container">
+				<!-- Contact Section Heading-->
+				<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Our Gallery</h2>
+				<!-- Icon Divider-->
+				<div class="divider-custom">
+					<div class="divider-custom-line"></div>
+					<div class="divider-custom-icon">
+						<i class="fas fa-star"></i>
+					</div>
+					<div class="divider-custom-line"></div>
+				</div>
+				<div class=" gallery-genral">
 
-{% endblock %}
+					<div class="gallery-image">
+
+
+						{% for post in posts %}
+
+							<div class="img-box">
+								<img src="{{ asset("uploads/images/" ~ post.images )}}" alt=""/>
+								<div class="transparent-box">
+									<div class="caption">
+										<p>{{ post.title }}</p>
+										<p class="opacity-low">{{ post.descripstion }}</p>
+										<div>
+						<button class = "buttonb">Buy</button>	
+						<button class = "buttonb">Donation</button>
+							</div>
+									</div>
+									
+								</div>
+
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			         {{include('common/_contact.html.twig')}}
+
+
+			{% endblock %}
+			
+
+
 

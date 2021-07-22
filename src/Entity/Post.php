@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Entity;
-
 use App\Repository\PostRepository;
-use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
-
+use Doctrine\ORM\Mapping as ORM;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 /**
  * @ORM\Entity(repositoryClass=PostRepository::class)
  * @Vich\Uploadable
@@ -30,7 +29,7 @@ class Post
     private $Descripstion;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=true)
      */
     private $categories_id;
 
@@ -175,7 +174,7 @@ class Post
         if (null !== $imageFile) {
             // It is required that at least one field changes if you are using doctrine
             // otherwise the event listeners won't be called and the file is lost
-            $this->updated_at = new \DateTimeImmutable();
+            $this->created_at = new \DateTimeImmutable();
         }
     }
 }

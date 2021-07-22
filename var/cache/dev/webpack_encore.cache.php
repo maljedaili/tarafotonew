@@ -13,8 +13,11 @@ return [[
         'app' => [
             'js' => [
                 'http://localhost:8080/build/runtime.js',
-                'http://localhost:8080/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ob-f5bc38.js',
+                'http://localhost:8080/build/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-cf785d.js',
                 'http://localhost:8080/build/app.js',
+            ],
+            'css' => [
+                'http://localhost:8080/build/app.css',
             ],
         ],
     ],

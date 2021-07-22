@@ -107,6 +107,6 @@ class __TwigTemplate_2847dd3b8532b16ea128f3dbcb98935ed41051cee460aaa5da6665f2e55
 {{ form(form_descripstion)}}
 
 
-{% endblock %}", "post/update.html.twig", "/Applications/Ampps/www/tarafoto/templates/post/update.html.twig");
+{% endblock %}", "post/update.html.twig", "/Users/test/Documents/project final/tarafoto-1/templates/post/update.html.twig");
     }
 }

@@ -1,8 +1,19 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<h2>{{form_title}}</h2>
-{{ form(form_descripstion)}}
+ <header>
+<div class="wrap-contact2">
+ <div class="imgcontainer">
+    <img src="/img/logo.svg" alt="Avatar" class="avatarlog">
+	  
+        <h2>{{form_title}}</h2>
+  </div>
 
+  
+   
 
+    {{ form(form_descripstion)}}
+
+</div>
+ </header>
 {% endblock %}

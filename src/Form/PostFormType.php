@@ -4,10 +4,11 @@ namespace App\Form;
 
 use App\Entity\Post;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\FileType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class PostFormType extends AbstractType
 {
@@ -17,18 +18,16 @@ class PostFormType extends AbstractType
             ->add('title')
             ->add('descripstion')
             ->add('price')
+            ->add('categories_id')
+            ->add('author')
             ->add('imageFile', VichFileType::class, [
                 'required' => false,
                 'allow_delete' => true,
                 'delete_label' => 'remove Photo',
                 'download_uri' => true,
                 'download_label' => 'Download Photo',
+                'asset_helper' => true,
             ])
-
-            ->add('attachment', FileType::class, [
-                'mapped' => false,
-            ])
-
             ->add('upload', SubmitType::class)
 
         ;

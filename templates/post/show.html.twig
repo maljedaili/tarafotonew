@@ -4,52 +4,69 @@
 
 {% block body %}
 
-{% for message in app.flashes('success') %}
-	<div class="alert alert-success">
-		{{ message }}
-	</div>
-
-{% endfor %}
-<div class=" hero ">
-	<h1>Lise des produits</h1>
+<div class=" container ">
+	<h1>photos lists</h1>
 	<p>
-		<a href="{{ path('create') }}">Ajouter un produit</a>
+		<a href="{{ path('create') }}">add new photo</a>
 	</p>
-
-	<div class=" hero ">
-		<table>
-			<thead>
-				<th>ID</th>
-				<th>Title</th>
-				<th>Description</th>
-				<th>Price</th>
-				<th>photo</th>
-			</thead>
-			<tbody>
-				{% for post in posts %}
-					<td>{{ post.id }}</td>
-					<td>{{ post.title }}</td>
-					<td>{{ post.descripstion }}</td>
-					<td>{{ post.price }}</td>
-					<td>{{ post.images }}</td>
-					
-					    <a class="btn-primary" href="{{ path('delete', {'id': post.id}) }}">delete</a>
-                        					    <a class="btn-primary" href="{{ path('delete', {'id': post.id}) }}">update</a>
-
-				    </td>
-                    
-
-				</tbody>
-				
-			</tbody>
-		</div>
-
-	</table>
 </div>
+
+</div>
+
+
+<section class="page-section" id="contact">
+			<div
+				class="container">
+				<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Our Gallery</h2>
+				<a class="buttonb" href="{{ path('create') }}">add new photo</a>
+
+				<!-- Icon Divider-->
+				<div class="divider-custom">
+					<div class="divider-custom-line"></div>
+					<div class="divider-custom-icon">
+						<i class="fas fa-star"></i>
+					</div>
+					<div class="divider-custom-line"></div>
+				</div>
+				<div class=" gallery-genral">
+
+					<div class="gallery-image">
+
+
+						{% for post in posts %}
+
+							<div class="img-box">
+								<img src="{{ asset("uploads/images/" ~ post.images )}}" alt=""/>
+								<div class="transparent-box">
+									<div class="caption">
+										<p>{{ post.title }}</p>
+										<p class="opacity-low">{{ post.descripstion }}</p>
+<div>
+								<a class="buttonb" href="{{ path('delete', {'id': post.id}) }}">Delete</a>
+								<a class="buttonb" href="{{ path('update_post', {'id': post.id}) }}">Update</a>
+
+							</div>
+									</div>
+
+
+								</div>
+              
+              
+
+							</div>
+							
+
+						{% endfor %}
+					</div>
+				</div>
+
+
+
+
 
 
 
 
     
-{% endfor %}
+
 {% endblock %}
