@@ -2,10 +2,12 @@
 
 namespace App\Form;
 
+use App\Entity\Categories;
 use App\Entity\Post;
 use Symfony\Component\Form\AbstractType;
 use Vich\UploaderBundle\Form\Type\VichFileType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -18,7 +20,10 @@ class PostFormType extends AbstractType
             ->add('title')
             ->add('descripstion')
             ->add('price')
-            ->add('categories_id')
+            ->add('category', EntityType::class, [
+                // looks for choices from this entity
+                'class' => Categories::class
+                ])
             ->add('imageFile', VichFileType::class, [
                 'required' => false,
                 'allow_delete' => true,

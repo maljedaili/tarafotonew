@@ -56,7 +56,7 @@ class Post
     private $imageFile;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="author")
      */
     private $author;
 

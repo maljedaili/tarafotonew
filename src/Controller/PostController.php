@@ -36,6 +36,7 @@ class PostController extends AbstractController
         $form->handleRequest($request);
         $user= $security->getUser();
         $post->setAuthor($user->getId());
+        $post->setcategory($post->getCategory());
 
         if ($form->isSubmitted() && $form->isValid()) {
             //entity manager
