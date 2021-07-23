@@ -42,10 +42,20 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $author;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $f_name;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $l_name;
+
 
     public function __toString()
     {
-        return $this->name;
+        return $this->email;
     }
 
     public function getId(): ?int
@@ -88,7 +98,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     public function getRoles(): array
     {
-        $roles = $this->roles;
+        $roles = ($this->roles);
         // guarantee every user at least has ROLE_USER
         $roles[] = 'ROLE_USER';
 
@@ -153,6 +163,30 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setAuthor($author)
     {
         $this->author = $author;
+
+        return $this;
+    }
+
+    public function getFName(): ?string
+    {
+        return $this->f_name;
+    }
+
+    public function setFName(string $f_name): self
+    {
+        $this->f_name = $f_name;
+
+        return $this;
+    }
+
+    public function getLName(): ?string
+    {
+        return $this->l_name;
+    }
+
+    public function setLName(string $l_name): self
+    {
+        $this->l_name = $l_name;
 
         return $this;
     }

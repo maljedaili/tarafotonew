@@ -7,6 +7,7 @@
     align-items: center;
 
   }
+  
  .gallery-image {
     padding: 20px;
     display: flex;
@@ -58,7 +59,7 @@
     left: 0;
     transition: background-color 0.3s ease;
   }
-  
+ 
   .img-box:hover img { 
     transform: scale(1.1);
   }
@@ -70,10 +71,13 @@
   .img-box:hover .caption {
     transform: translateY(-20px);
     opacity: 1.0;
-  }
+  
+}
   
   .img-box:hover {
     cursor: pointer;
+    
+   
   }
   
   .caption > p:nth-child(2) {
@@ -177,4 +181,8 @@
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
+}
+.imageContainer > img:hover {
+  width: 500px;
+  height: 200px;
 }
