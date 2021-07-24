@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #080808;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  header {
+    display: flex;
+   -moz-align-items: center;
+   -webkit-align-items: center;
+   -ms-align-items: center;
+   align-items: center;
+   -moz-justify-content: center;
+   -webkit-justify-content: center;
+   -ms-justify-content: center;
+   justify-content: center;
+   position: relative;
+   height: 60em;
+   background-size: cover;
+   background-image: radial-gradient(#6D071A, #3E0018);
+   padding: 0;
+   width: 100%;
+   justify-content: center;
+  }
+  .hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+   
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: white;
+    font-family: "Poiret One";
+    }
